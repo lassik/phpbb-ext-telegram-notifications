@@ -4,7 +4,7 @@
  * @package phpBB extension - Telegram notifications
  * @copyright (c) 2017, 2018 Lassi Kortela
  * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
- *
+ * Brazilian Portuguese translation by eunaumtenhoid (c) 2017 [ver 0.5.0] (https://github.com/phpBBTraducoes)
  */
 
 if (!defined('IN_PHPBB'))
