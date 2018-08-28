@@ -29,6 +29,7 @@ class acp_controller
 	private $string_vars = array(
 		'lassik_telegram_bot_auth_token',
 		'lassik_telegram_chat_id',
+		'lassik_telegram_chat_forums',
 	);
 
 	private $bool_vars = array(
