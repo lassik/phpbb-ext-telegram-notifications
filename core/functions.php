@@ -216,18 +216,16 @@ class functions
 	private function is_forum_excluded($forum_id)
 	{
 		$forums_excluded = preg_split("/[\s,]+/", $this->config['lassik_telegram_chat_forums']);
-
 		return in_array($forum_id, $forums_excluded);
 	}
 
 	public function notify_about_post($url, $username, $mode, $title, $extra, $forum_id)
 	{
-
-
-		if (!$this->should_notify_about_post_mode($mode) || $this->is_forum_excluded($forumid))
+		if (!$this->should_notify_about_post_mode($mode) || $this->is_forum_excluded($forum_id))
 		{
 			return;
 		}
+
 		$html = htmlspecialchars($this->prefix_for_post_mode($mode, $username)).
 			  '<a href="'.htmlspecialchars($url).'">'.
 			  htmlspecialchars($title).
