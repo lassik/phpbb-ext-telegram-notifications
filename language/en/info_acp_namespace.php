@@ -20,6 +20,7 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	'ACP_TELEGRAM_BOT_AUTH_TOKEN'	=> 'Telegram bot auth token',
 	'ACP_TELEGRAM_CHAT_ID'			=> 'Telegram chat ID',
+        'ACP_TELEGRAM_CHAT_FORUMS'              => 'Forums to exclude, sepparated by comma',
 	'ACP_TELEGRAM_CONNECTION'		=> 'Telegram connection',
 	'ACP_TELEGRAM_ERROR'			=> 'Error message',
 	'ACP_TELEGRAM_FIND_CHAT_ID'		=> 'Find chat ID',

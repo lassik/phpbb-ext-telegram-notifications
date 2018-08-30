@@ -91,7 +91,11 @@ class main_listener implements EventSubscriberInterface
 			$extra = html_entity_decode($extra);
 			$extra = strip_tags($extra);
 		}
+
+		$forum_id = $event['data']['forum_id'];
+
 		$this->functions->notify_about_post(
-			$url, $username, $mode, $title, $extra);
+			$url, $username, $mode, $title, $extra, $forum_id);
+
 	}
 }
